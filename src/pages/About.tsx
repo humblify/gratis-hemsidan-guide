@@ -1,172 +1,202 @@
 import { useTranslation } from 'react-i18next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import SEOHead from '@/components/SEOHead';
+import AnimatedSection from '@/components/AnimatedSection';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Eye, Microscope, Target, Clock, User } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const About = () => {
   const { t } = useTranslation();
 
-  const teamMembers = [
+  const teamRoles = [
     {
-      name: "Erik Johansson",
-      role: "CEO & Co-Founder",
-      bio: "Former McKinsey partner specializing in energy strategy and sustainability transformations.",
-      initials: "EJ"
+      role: t('about.team.ceo.role'),
+      background: t('about.team.ceo.background'),
+      icon: User
     },
     {
-      name: "Maria Chen",
-      role: "CTO & Co-Founder", 
-      bio: "Ex-Palantir engineer with 10+ years experience in data integration and analytics platforms.",
-      initials: "MC"
+      role: t('about.team.cto.role'),
+      background: t('about.team.cto.background'),
+      icon: User
     },
     {
-      name: "Anders Lindqvist",
-      role: "Head of Strategy",
-      bio: "Former investment director at Northzone with expertise in climate tech and ESG integration.",
-      initials: "AL"
+      role: t('about.team.strategy.role'),
+      background: t('about.team.strategy.background'),
+      icon: User
     },
     {
-      name: "Sarah Schmidt",
-      role: "Lead Data Scientist",
-      bio: "PhD in Environmental Economics, former researcher at Stockholm Environment Institute.",
-      initials: "SS"
+      role: t('about.team.science.role'),
+      background: t('about.team.science.background'),
+      icon: User
     },
     {
-      name: "Thomas Bergström",
-      role: "Head of Sales",
-      bio: "20+ years enterprise software sales, former VP at Epicor focusing on manufacturing solutions.",
-      initials: "TB"
+      role: t('about.team.sales.role'),
+      background: t('about.team.sales.background'),
+      icon: User
     },
     {
-      name: "Lisa Wang",
-      role: "Head of Product",
-      bio: "Former product manager at Spotify, specialized in B2B analytics and user experience design.",
-      initials: "LW"
+      role: t('about.team.product.role'),
+      background: t('about.team.product.background'),
+      icon: User
     }
   ];
 
   const values = [
     {
-      title: "Transparency",
-      description: "We believe in radical openness - both in our technology and our business practices."
+      title: t('about.values.transparency.title'),
+      description: t('about.values.transparency.description'),
+      icon: Eye
     },
     {
-      title: "Scientific Rigor",
-      description: "All our methodologies are grounded in peer-reviewed research and empirical validation."
+      title: t('about.values.rigor.title'),
+      description: t('about.values.rigor.description'),
+      icon: Microscope
     },
     {
-      title: "Practical Impact", 
-      description: "We focus on solutions that drive measurable business outcomes and environmental progress."
+      title: t('about.values.impact.title'), 
+      description: t('about.values.impact.description'),
+      icon: Target
     },
     {
-      title: "Long-term Thinking",
-      description: "We optimize for sustainable value creation over short-term gains."
+      title: t('about.values.thinking.title'),
+      description: t('about.values.thinking.description'),
+      icon: Clock
     }
   ];
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead page="about" />
       <Navigation />
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="py-24 px-4">
-          <div className="container-custom text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              {t('nav.about')}
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We're a team of strategists, engineers, and sustainability experts united by the belief 
-              that transparency drives transformation.
-            </p>
-          </div>
-        </section>
+        <AnimatedSection>
+          <section className="section-padding">
+            <div className="container-custom text-center">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
+                <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 text-glow">
+                  {t('about.title')}
+                </h1>
+                <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-4">
+                  {t('about.subtitle')}
+                </p>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  {t('about.description')}
+                </p>
+              </motion.div>
+            </div>
+          </section>
+        </AnimatedSection>
 
         {/* Mission & Vision */}
-        <section className="py-20 px-4">
-          <div className="container-custom">
-            <div className="grid md:grid-cols-2 gap-12">
-              <Card className="card-glass">
-                <CardHeader>
-                  <CardTitle className="text-3xl text-primary mb-4">Our Mission</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-lg text-muted-foreground">
-                    To revolutionize strategic decision-making by integrating environmental impact 
-                    as a core financial metric, enabling companies to achieve superior returns 
-                    through sustainable practices.
-                  </p>
-                </CardContent>
-              </Card>
+        <AnimatedSection>
+          <section className="section-padding bg-muted/20">
+            <div className="container-custom">
+              <div className="grid lg:grid-cols-2 gap-12">
+                <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
+                  <Card className="card-glow h-full">
+                    <CardHeader>
+                      <CardTitle className="text-3xl text-primary mb-4">{t('about.missionTitle')}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        {t('about.mission')}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
 
-              <Card className="card-glass">
-                <CardHeader>
-                  <CardTitle className="text-3xl text-primary mb-4">Our Vision</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-lg text-muted-foreground">
-                    A world where every business decision is informed by its true environmental 
-                    and financial impact, creating a sustainable economy that thrives within 
-                    planetary boundaries.
-                  </p>
-                </CardContent>
-              </Card>
+                <motion.div whileHover={{ scale: 1.02 }} transition={{ type: "spring", stiffness: 300 }}>
+                  <Card className="card-glow h-full">
+                    <CardHeader>
+                      <CardTitle className="text-3xl text-primary mb-4">{t('about.visionTitle')}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        {t('about.vision')}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </AnimatedSection>
 
-        {/* Team Section */}
-        <section className="py-20 px-4 bg-muted/20">
-          <div className="container-custom">
-            <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16">
-              Our Team
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {teamMembers.map((member, index) => (
-                <Card key={index} className="card-glass text-center">
-                  <CardHeader>
-                    <Avatar className="w-24 h-24 mx-auto mb-4">
-                      <AvatarImage src={`/placeholder-avatar-${index + 1}.jpg`} />
-                      <AvatarFallback className="text-lg font-semibold bg-primary/20">
-                        {member.initials}
-                      </AvatarFallback>
-                    </Avatar>
-                    <CardTitle className="text-xl text-foreground">{member.name}</CardTitle>
-                    <CardDescription className="text-primary font-medium">
-                      {member.role}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground">{member.bio}</p>
-                  </CardContent>
-                </Card>
-              ))}
+        {/* Team Section - Anonymized */}
+        <AnimatedSection>
+          <section className="section-padding">
+            <div className="container-custom">
+              <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16">
+                {t('about.teamTitle')}
+              </h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {teamRoles.map((member, index) => (
+                  <motion.div
+                    key={index}
+                    whileHover={{ y: -10 }}
+                    transition={{ type: "spring", stiffness: 400 }}
+                  >
+                    <Card className="card-glass text-center h-full">
+                      <CardHeader>
+                        <div className="w-24 h-24 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                          <member.icon className="w-12 h-12 text-primary" />
+                        </div>
+                        <CardTitle className="text-xl text-foreground">{member.role}</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <p className="text-sm text-muted-foreground leading-relaxed">{member.background}</p>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </AnimatedSection>
 
         {/* Values Section */}
-        <section className="py-20 px-4">
-          <div className="container-custom">
-            <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16">
-              Our Values
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {values.map((value, index) => (
-                <Card key={index} className="card-glass">
-                  <CardHeader>
-                    <CardTitle className="text-2xl text-primary">{value.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-lg text-muted-foreground">
-                      {value.description}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-              ))}
+        <AnimatedSection>
+          <section className="section-padding bg-muted/20">
+            <div className="container-custom">
+              <h2 className="text-3xl md:text-5xl font-bold text-center text-foreground mb-16">
+                {t('about.valuesTitle')}
+              </h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                {values.map((value, index) => (
+                  <motion.div
+                    key={index}
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <Card className="card-glow h-full">
+                      <CardHeader>
+                        <div className="flex items-center gap-4">
+                          <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center">
+                            <value.icon className="w-6 h-6 text-primary" />
+                          </div>
+                          <CardTitle className="text-2xl text-primary">{value.title}</CardTitle>
+                        </div>
+                      </CardHeader>
+                      <CardContent>
+                        <CardDescription className="text-lg text-muted-foreground leading-relaxed">
+                          {value.description}
+                        </CardDescription>
+                      </CardContent>
+                    </Card>
+                  </motion.div>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </AnimatedSection>
       </main>
       <Footer />
     </div>

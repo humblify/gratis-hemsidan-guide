@@ -1,11 +1,29 @@
 {
+  "seo": {
+    "home": {
+      "title": "Humblify - Transform Sustainability into Strategic Advantage | EROI Platform",
+      "description": "AI-driven platform integrating sustainability and profitability. Discover Environmental Return on Investment (EROI) for strategic decision-making in capital-intensive industries."
+    },
+    "product": {
+      "title": "Strategic Navigator - EROI Platform Features | Humblify",
+      "description": "Comprehensive EROI platform with radical transparency, predictive risk management, and integrated ESG-financial analysis for enterprise decision-making."
+    },
+    "about": {
+      "title": "About Humblify - Mission, Vision & Team | EROI Leaders",
+      "description": "Learn about our mission to revolutionize strategic decision-making through Environmental Return on Investment methodology and disciplined sustainability integration."
+    },
+    "contact": {
+      "title": "Contact Humblify - Book EROI Demo | Get Started Today",
+      "description": "Ready to transform your strategic decisions? Book a personalized EROI platform demonstration and discover sustainable profitability solutions."
+    }
+  },
   "nav": {
     "home": "Home",
-    "product": "Product", 
+    "product": "Platform", 
     "eroiLab": "EROI Lab",
-    "about": "About Us",
+    "about": "About",
     "contact": "Contact",
-    "bookDemo": "Book a Demo"
+    "bookDemo": "Book Demo"
   },
   "hero": {
     "title": "Transform Sustainability into Strategic Advantage",
@@ -94,6 +112,157 @@
     "explanationTree": "Calculation Transparency",
     "shadowPricing": "Shadow Pricing Applied",
     "uniqueValue": "Unlike traditional calculators, our EROI Lab provides complete transparency into how environmental factors integrate with financial metrics - the glass box approach to sustainable investment analysis."
+  },
+  "product": {
+    "title": "The Strategic Navigator",
+    "subtitle": "Enterprise EROI platform transforming sustainability integration",
+    "description": "Advanced AI-driven system combining radical transparency with predictive analytics for strategic decision-making in capital-intensive industries.",
+    "bookDemo": "Request Platform Demo",
+    "coreTitle": "Four Core Principles",
+    "principles": {
+      "transparency": {
+        "title": "Unified Workspace",
+        "description": "Object-centric navigation with universal Inspector panel providing complete visibility into environmental impact across all business operations."
+      },
+      "integration": {
+        "title": "Fluid Interactivity", 
+        "description": "Direct manipulation interfaces with universal cross-filtering enabling seamless integration of ESG factors into traditional financial models."
+      },
+      "predictive": {
+        "title": "Relevant Information Density",
+        "description": "Progressive disclosure with user-configured dashboards for advanced modeling of regulatory, environmental, and transition risks."
+      },
+      "profitability": {
+        "title": "Radical Transparency",
+        "description": "ExplanationTree methodology with complete audit trails for achieving superior financial performance through disciplined sustainability practices."
+      }
+    },
+    "featuresTitle": "Platform Capabilities",
+    "features": {
+      "analytics": {
+        "title": "Real-time EROI Analytics",
+        "description": "Live data processing and Environmental Return on Investment calculations across multiple data sources with shadow pricing integration."
+      },
+      "modeling": {
+        "title": "Advanced Scenario Modeling", 
+        "description": "Multi-dimensional what-if analysis for strategic planning with predictive risk assessment and compliance forecasting."
+      },
+      "compliance": {
+        "title": "Automated Compliance Tracking",
+        "description": "Continuous monitoring of regulatory requirements including CSRD, EU Taxonomy, and emerging sustainability frameworks."
+      }
+    },
+    "techStack": "Built on FastAPI + Neo4j + React + Gemini AI"
+  },
+  "about": {
+    "title": "About Humblify",
+    "subtitle": "Pioneering the integration of environmental impact and financial strategy",
+    "description": "We are strategists, engineers, and sustainability experts united by the conviction that radical transparency drives sustainable transformation in capital-intensive industries.",
+    "missionTitle": "Our Mission",
+    "mission": "To revolutionize strategic decision-making in capital-intensive industries by integrating environmental impact as a core financial metric, enabling superior returns through sustainable practices.",
+    "visionTitle": "Our Vision", 
+    "vision": "A world where every business decision is informed by its true environmental and financial impact, creating a sustainable economy that thrives within planetary boundaries while delivering exceptional shareholder value.",
+    "valuesTitle": "Core Values",
+    "values": {
+      "transparency": {
+        "title": "Radical Transparency",
+        "description": "We champion complete openness in our technology, methodologies, and business practices. Glass-box AI over black-box solutions."
+      },
+      "rigor": {
+        "title": "Scientific Rigor",
+        "description": "All methodologies grounded in peer-reviewed research, empirical validation, and continuous improvement through data-driven iteration."
+      },
+      "impact": {
+        "title": "Measurable Impact",
+        "description": "We focus exclusively on solutions that drive quantifiable business outcomes and demonstrable environmental progress."
+      },
+      "thinking": {
+        "title": "Long-term Value Creation",
+        "description": "We optimize for sustainable competitive advantage and multi-generational value creation over short-term financial metrics."
+      }
+    },
+    "teamTitle": "Leadership Team",
+    "team": {
+      "ceo": {
+        "role": "Chief Executive Officer", 
+        "background": "Former strategy consulting partner specializing in energy transition and capital allocation optimization in heavy industries."
+      },
+      "cto": {
+        "role": "Chief Technology Officer",
+        "background": "Ex-Palantir senior engineer with deep expertise in enterprise data integration, AI orchestration, and analytics platform architecture."
+      },
+      "strategy": {
+        "role": "Head of Strategic Partnerships",
+        "background": "Former investment director at leading climate-tech VC with extensive network in energy, manufacturing, and infrastructure sectors."
+      },
+      "science": {
+        "role": "Lead Data Scientist",
+        "background": "PhD Environmental Economics, former researcher at Stockholm Environment Institute specializing in environmental shadow pricing methodologies."
+      },
+      "sales": {
+        "role": "Head of Enterprise Sales",
+        "background": "20+ years enterprise software sales focusing on mission-critical systems for manufacturing, energy, and infrastructure clients."
+      },
+      "product": {
+        "role": "Head of Product Strategy",
+        "background": "Former product leader at B2B analytics platforms with specialization in user experience design for complex data visualization systems."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Humblify",
+    "subtitle": "Ready to transform strategic decision-making with EROI?", 
+    "description": "Book a personalized demonstration or explore partnership opportunities with our team of sustainability and technology experts.",
+    "demoTitle": "Request Platform Demo",
+    "demoDescription": "Schedule a personalized demonstration of our EROI Strategic Navigator platform",
+    "infoTitle": "Contact Information",
+    "hoursTitle": "Business Hours",
+    "resourcesTitle": "Immediate Resources",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name", 
+      "email": "Email Address",
+      "company": "Company Name",
+      "role": "Your Role",
+      "industry": "Industry Sector",
+      "message": "Project Details",
+      "messagePlaceholder": "Describe your sustainability integration challenges and strategic objectives...",
+      "submit": "Schedule Demo Session",
+      "roles": {
+        "cfo": "Chief Financial Officer",
+        "cso": "Chief Sustainability Officer", 
+        "strategy": "Strategy Director",
+        "sustainability": "Sustainability Manager",
+        "investment": "Investment Director",
+        "operations": "Operations Manager",
+        "other": "Other"
+      },
+      "industries": {
+        "energy": "Energy & Utilities",
+        "manufacturing": "Manufacturing",
+        "infrastructure": "Infrastructure",
+        "finance": "Financial Services",
+        "mining": "Mining & Resources",
+        "chemicals": "Chemicals & Materials",
+        "other": "Other"
+      }
+    },
+    "info": {
+      "email": "demo@humblify.com",
+      "phone": "+46 8 123 456 78",
+      "address": "Kungsgatan 12, 111 35 Stockholm, Sweden"
+    },
+    "hours": {
+      "weekdays": "Monday - Friday",
+      "time": "09:00 - 18:00 CET",
+      "response": "Response Time",
+      "responseTime": "< 24 hours"
+    },
+    "resources": {
+      "whitepaper": "Download EROI Methodology Whitepaper",
+      "casestudies": "Enterprise Case Studies Library", 
+      "documentation": "Technical Platform Documentation"
+    }
   },
   "cta": {
     "title": "Ready to Transform Your Strategy?",

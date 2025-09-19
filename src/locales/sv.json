@@ -1,11 +1,29 @@
 {
+  "seo": {
+    "home": {
+      "title": "Humblify - Förvandla Hållbarhet till Strategisk Fördel | EROI-Plattform",
+      "description": "AI-driven plattform som integrerar hållbarhet och lönsamhet. Upptäck Environmental Return on Investment (EROI) för strategiska beslut inom kapitalintensiva industrier."
+    },
+    "product": {
+      "title": "Strategiska Navigatorn - EROI-Plattformens Funktioner | Humblify",
+      "description": "Komplett EROI-plattform med radikal transparens, prediktiv riskhantering och integrerad ESG-finansiell analys för företagsbeslut."
+    },
+    "about": {
+      "title": "Om Humblify - Mission, Vision & Team | EROI-Ledare",
+      "description": "Lär dig om vår mission att revolutionera strategiska beslut genom Environmental Return on Investment-metodik och disciplinerad hållbarhetsintegration."
+    },
+    "contact": {
+      "title": "Kontakta Humblify - Boka EROI-Demo | Kom Igång Idag",
+      "description": "Redo att transformera dina strategiska beslut? Boka en personlig EROI-plattformsdemonstration och upptäck lösningar för hållbar lönsamhet."
+    }
+  },
   "nav": {
     "home": "Hem",
-    "product": "Produkt",
+    "product": "Plattform",
     "eroiLab": "EROI-labbet",
     "about": "Om Oss",
     "contact": "Kontakt",
-    "bookDemo": "Boka en Demo"
+    "bookDemo": "Boka Demo"
   },
   "hero": {
     "title": "Förvandla Hållbarhet till Strategisk Fördel",
@@ -93,6 +111,157 @@
     "explanationTree": "Kalkyltransparens",
     "shadowPricing": "Shadow Pricing Tillämpat",
     "uniqueValue": "Till skillnad från traditionella kalkylatorer ger vårt EROI-labb fullständig transparens i hur miljöfaktorer integreras med finansiella mätvärden - glaslåda-approachen till hållbar investeringsanalys."
+  },
+  "product": {
+    "title": "Den Strategiska Navigatorn",
+    "subtitle": "Enterprise EROI-plattform som transformerar hållbarhetsintegration",
+    "description": "Avancerat AI-drivet system som kombinerar radikal transparens med prediktiva analyser för strategiska beslut inom kapitalintensiva industrier.",
+    "bookDemo": "Begär Plattformsdemonstration",
+    "coreTitle": "Fyra Kärnprinciper",
+    "principles": {
+      "transparency": {
+        "title": "Enhetlig Arbetsyta",
+        "description": "Objektcentrerad navigation med universell Inspector-panel som ger komplett överblick över miljöpåverkan i alla affärsverksamheter."
+      },
+      "integration": {
+        "title": "Flytande Interaktivitet",
+        "description": "Direct manipulation-gränssnitt med universell korsfiltrering som möjliggör sömlös integration av ESG-faktorer i traditionella finansiella modeller."
+      },
+      "predictive": {
+        "title": "Relevant Informationsdensitet", 
+        "description": "Progressiv avslöjande med användarkonfigurerade dashboards för avancerad modellering av regulatoriska, miljömässiga och transitionsrisker."
+      },
+      "profitability": {
+        "title": "Radikal Transparens",
+        "description": "ExplanationTree-metodik med kompletta revisionsspår för att uppnå överlägsen finansiell prestanda genom disciplinerade hållbarhetspraxis."
+      }
+    },
+    "featuresTitle": "Plattformsfunktioner",
+    "features": {
+      "analytics": {
+        "title": "Realtids EROI-Analys",
+        "description": "Live-databehandling och Environmental Return on Investment-beräkningar över flera datakällor med shadow pricing-integration."
+      },
+      "modeling": {
+        "title": "Avancerad Scenariomodellering",
+        "description": "Flerdimensionell what-if-analys för strategisk planering med prediktiv riskbedömning och compliance-prognoser."
+      },
+      "compliance": {
+        "title": "Automatiserad Compliance-Spårning", 
+        "description": "Kontinuerlig övervakning av regulatoriska krav inklusive CSRD, EU-taxonomi och framväxande hållbarhetsramverk."
+      }
+    },
+    "techStack": "Byggd på FastAPI + Neo4j + React + Gemini AI"
+  },
+  "about": {
+    "title": "Om Humblify",
+    "subtitle": "Pionjärer inom integration av miljöpåverkan och finansiell strategi",
+    "description": "Vi är strateger, ingenjörer och hållbarhetsexperter förenade av övertygelsen att radikal transparens driver hållbar transformation inom kapitalintensiva industrier.",
+    "missionTitle": "Vår Mission",
+    "mission": "Att revolutionera strategiskt beslutsfattande inom kapitalintensiva industrier genom att integrera miljöpåverkan som ett centralt finansiellt mätvärde, vilket möjliggör överlägsna avkastningar genom hållbara praxis.",
+    "visionTitle": "Vår Vision",
+    "vision": "En värld där varje affärsbeslut informeras av dess verkliga miljömässiga och finansiella påverkan, vilket skapar en hållbar ekonomi som blomstrar inom planetära gränser samtidigt som den levererar exceptionell aktieägarevärde.",
+    "valuesTitle": "Kärnvärden",
+    "values": {
+      "transparency": {
+        "title": "Radikal Transparens",
+        "description": "Vi förespråkar fullständig öppenhet i vår teknik, metoder och affärspraxis. Glaslåda-AI över svartlåde-lösningar."
+      },
+      "rigor": {
+        "title": "Vetenskaplig Stringens",
+        "description": "Alla metoder grundade i peer-reviewad forskning, empirisk validering och kontinuerlig förbättring genom datadriven iteration."
+      },
+      "impact": {
+        "title": "Mätbar Påverkan",
+        "description": "Vi fokuserar uteslutande på lösningar som driver kvantifierbara affärsresultat och påvisbar miljöförbättring."
+      },
+      "thinking": {
+        "title": "Långsiktig Värdeskaping",
+        "description": "Vi optimerar för hållbar konkurrenskraft och multigenerationell värdeskaping över kortsiktiga finansiella mätvärden."
+      }
+    },
+    "teamTitle": "Ledningsteam",
+    "team": {
+      "ceo": {
+        "role": "Verkställande Direktör",
+        "background": "Före detta strategikonsultpartner specialiserad på energiomställning och kapitalallokering inom tunga industrier."
+      },
+      "cto": {
+        "role": "Teknisk Direktör",
+        "background": "Ex-Palantir senior ingenjör med djup expertis inom enterprise-dataintegration, AI-orkestrering och analysplattformsarkitektur."
+      },
+      "strategy": {
+        "role": "Chef för Strategiska Partnerskap",
+        "background": "Före detta investeringsdirektör på ledande klimatteknologi-VC med omfattande nätverk inom energi, tillverkning och infrastruktursektorer."
+      },
+      "science": {
+        "role": "Ledande Datavetare",
+        "background": "PhD Miljöekonomi, före detta forskare vid Stockholms Miljöinstitut specialiserad på metodiker för miljömässig shadow pricing."
+      },
+      "sales": {
+        "role": "Chef för Enterprise-försäljning",
+        "background": "20+ års enterprise-mjukvaruförsäljning fokuserad på verksamhetskritiska system för tillverknings-, energi- och infrastrukturklienter."
+      },
+      "product": {
+        "role": "Chef för Produktstrategi",
+        "background": "Före detta produktledare på B2B-analysplattformar med specialisering inom användarupplevelsedesign för komplexa datavisualiseringssystem."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontakta Humblify",
+    "subtitle": "Redo att transformera strategiska beslut med EROI?",
+    "description": "Boka en personlig demonstration eller utforska partnerskapsmöjligheter med vårt team av hållbarhets- och teknikexperter.",
+    "demoTitle": "Begär Plattformsdemonstration",
+    "demoDescription": "Schemalägg en personlig demonstration av vår EROI Strategiska Navigator-plattform",
+    "infoTitle": "Kontaktinformation", 
+    "hoursTitle": "Kontorstider",
+    "resourcesTitle": "Direkta Resurser",
+    "form": {
+      "firstName": "Förnamn",
+      "lastName": "Efternamn",
+      "email": "E-postadress",
+      "company": "Företagsnamn",
+      "role": "Din Roll",
+      "industry": "Branschsektor",
+      "message": "Projektdetaljer",
+      "messagePlaceholder": "Beskriv dina hållbarhetsintegrationsutmaningar och strategiska mål...",
+      "submit": "Boka Demosession",
+      "roles": {
+        "cfo": "Ekonomichef",
+        "cso": "Hållbarhetschef",
+        "strategy": "Strategidirektör",
+        "sustainability": "Hållbarhetsansvarig",
+        "investment": "Investeringsdirektör",
+        "operations": "Verksamhetschef",
+        "other": "Annat"
+      },
+      "industries": {
+        "energy": "Energi & Utilities",
+        "manufacturing": "Tillverkning",
+        "infrastructure": "Infrastruktur",
+        "finance": "Finansiella Tjänster", 
+        "mining": "Gruv & Resurser",
+        "chemicals": "Kemi & Material",
+        "other": "Annat"
+      }
+    },
+    "info": {
+      "email": "demo@humblify.com",
+      "phone": "+46 8 123 456 78",
+      "address": "Kungsgatan 12, 111 35 Stockholm, Sverige"
+    },
+    "hours": {
+      "weekdays": "Måndag - Fredag",
+      "time": "09:00 - 18:00 CET", 
+      "response": "Svarstid",
+      "responseTime": "< 24 timmar"
+    },
+    "resources": {
+      "whitepaper": "Ladda Ner EROI-Metodikens Whitepaper",
+      "casestudies": "Enterprise Fallstudiebibliotek",
+      "documentation": "Teknisk Plattformsdokumentation"
+    }
   },
   "cta": {
     "title": "Redo att Transformera Din Strategi?",
