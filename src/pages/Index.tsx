@@ -1,22 +1,16 @@
 import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
-import ProblemSection from "@/components/ProblemSection";
-import SolutionSection from "@/components/SolutionSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import EnhancedEroiLab from "@/components/EnhancedEroiLab";
+import SimplifiedHero from "@/components/SimplifiedHero";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead page="home" />
       <Navigation />
       <main>
-        <HeroSection />
-        <ProblemSection />
-        <SolutionSection />
-        <EnhancedEroiLab />
-        <TestimonialsSection />
+        <SimplifiedHero />
         <CTASection />
       </main>
       <Footer />

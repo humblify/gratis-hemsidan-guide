@@ -17,6 +17,26 @@
       "description": "Ready to transform your strategic decisions? Book a personalized EROI platform demonstration and discover sustainable profitability solutions."
     }
   },
+  "sidebar": {
+    "platform": {
+      "title": "Platform",
+      "overview": "Overview",
+      "eroiLab": "EROI Lab",
+      "analytics": "Analytics"
+    },
+    "solutions": {
+      "title": "Solutions",
+      "riskManagement": "Risk Management",
+      "esgIntegration": "ESG Integration", 
+      "compliance": "Compliance"
+    },
+    "resources": {
+      "title": "Resources",
+      "caseStudies": "Case Studies",
+      "documentation": "Documentation"
+    },
+    "main": "Main"
+  },
   "nav": {
     "home": "Home",
     "product": "Platform", 

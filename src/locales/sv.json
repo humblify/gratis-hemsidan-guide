@@ -17,6 +17,26 @@
       "description": "Redo att transformera dina strategiska beslut? Boka en personlig EROI-plattformsdemonstration och upptäck lösningar för hållbar lönsamhet."
     }
   },
+  "sidebar": {
+    "platform": {
+      "title": "Plattform",
+      "overview": "Översikt",
+      "eroiLab": "EROI Lab", 
+      "analytics": "Analys"
+    },
+    "solutions": {
+      "title": "Lösningar",
+      "riskManagement": "Riskhantering",
+      "esgIntegration": "ESG Integration",
+      "compliance": "Regelefterlevnad"
+    },
+    "resources": {
+      "title": "Resurser", 
+      "caseStudies": "Fallstudier",
+      "documentation": "Dokumentation"
+    },
+    "main": "Huvudsidor"
+  },
   "nav": {
     "home": "Hem",
     "product": "Plattform",
