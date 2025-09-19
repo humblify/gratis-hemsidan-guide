@@ -1,13 +1,15 @@
+import { useTranslation } from 'react-i18next';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import solutionImage from "@/assets/eroi-cube.jpg";
 
 const SolutionSection = () => {
+  const { t } = useTranslation();
+  
   const benefits = [
-    "Kvantifierar miljöpåverkan som konkreta finansiella nyckeltal",
-    "Integrerar hållbarhet direkt i investeringskalkyler",
-    "Eliminerar risken för 'greenwashing' genom radikal transparens",
-    "Optimerar portföljallokering baserat på EROI-värden"
+    t('solution.benefits.integration'),
+    t('solution.benefits.riskReduction'),
+    t('solution.benefits.transparency')
   ];
 
   return (
@@ -23,15 +25,15 @@ const SolutionSection = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-              <span className="text-primary">Hållbar Lönsamhet</span> som en Disciplin
+              <span className="text-primary">{t('solution.title')}</span>
             </h2>
 
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Environmental Return on Investment (EROI) omvandlar vag hållbarhet till 
-              kvantifierbara affärsnyckeltal som CFO:er kan förstå och agera på.
+              {t('solution.subtitle')}
             </p>
 
             {/* Benefits List */}
+            <h3 className="text-lg font-semibold mb-6">{t('solution.keyBenefits')}</h3>
             <div className="space-y-4 mb-10">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3">
@@ -74,21 +76,20 @@ const SolutionSection = () => {
         {/* Process Flow */}
         <div className="mt-24">
           <h3 className="text-2xl font-bold text-center mb-12">
-            Från Kaos till <span className="text-primary">Klarhet</span> på tre steg
+            {t('solution.processTitle')}
           </h3>
           
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { step: "01", title: "Samla & Strukturera", desc: "AI-driven datainsamling från alla källor" },
-              { step: "02", title: "Analysera & Kvantifiera", desc: "EROI-beräkningar med full transparens" },
-              { step: "03", title: "Optimera & Agera", desc: "Handlingskraftiga rekommendationer" }
+              { step: "01", title: t('solution.process.dataCollection') },
+              { step: "02", title: t('solution.process.eroiCalculation') },
+              { step: "03", title: t('solution.process.strategicIntegration') }
             ].map((item, index) => (
               <div key={index} className="text-center group">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
                   <span className="text-primary font-bold">{item.step}</span>
                 </div>
                 <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
-                <p className="text-muted-foreground">{item.desc}</p>
               </div>
             ))}
           </div>

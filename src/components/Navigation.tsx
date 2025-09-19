@@ -1,9 +1,12 @@
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import LanguageSelector from './LanguageSelector';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
@@ -16,27 +19,28 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">
-              Hem
+            <a href="/" className="text-foreground hover:text-primary transition-colors">
+              {t('nav.home')}
             </a>
-            <a href="#product" className="text-foreground hover:text-primary transition-colors">
-              Produkt
+            <a href="/product" className="text-foreground hover:text-primary transition-colors">
+              {t('nav.product')}
             </a>
-            <a href="#eroi-lab" className="text-foreground hover:text-primary transition-colors">
-              EROI-labbet
+            <a href="/#eroi-lab" className="text-foreground hover:text-primary transition-colors">
+              {t('nav.eroiLab')}
             </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors">
-              Om Oss
+            <a href="/about" className="text-foreground hover:text-primary transition-colors">
+              {t('nav.about')}
             </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors">
-              Kontakt
+            <a href="/contact" className="text-foreground hover:text-primary transition-colors">
+              {t('nav.contact')}
             </a>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* Desktop Actions */}
+          <div className="hidden md:flex items-center space-x-4">
+            <LanguageSelector />
             <Button className="btn-hero">
-              Boka en Demo
+              {t('nav.bookDemo')}
             </Button>
           </div>
 
@@ -57,43 +61,46 @@ const Navigation = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-card/50 backdrop-blur-lg rounded-lg mt-2">
               <a
-                href="#home"
+                href="/"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Hem
+                {t('nav.home')}
               </a>
               <a
-                href="#product"
+                href="/product"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Produkt
+                {t('nav.product')}
               </a>
               <a
-                href="#eroi-lab"
+                href="/#eroi-lab"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                EROI-labbet
+                {t('nav.eroiLab')}
               </a>
               <a
-                href="#about"
+                href="/about"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Om Oss
+                {t('nav.about')}
               </a>
               <a
-                href="#contact"
+                href="/contact"
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Kontakt
+                {t('nav.contact')}
               </a>
-              <div className="pt-4">
+              <div className="pt-4 space-y-2">
+                <div className="flex justify-center">
+                  <LanguageSelector />
+                </div>
                 <Button className="btn-hero w-full" onClick={() => setIsOpen(false)}>
-                  Boka en Demo
+                  {t('nav.bookDemo')}
                 </Button>
               </div>
             </div>

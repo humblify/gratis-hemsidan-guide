@@ -1,22 +1,25 @@
+import { useTranslation } from 'react-i18next';
 import { Database, AlertTriangle, TrendingDown } from "lucide-react";
 import problemIcons from "@/assets/problem-icons.png";
 
 const ProblemSection = () => {
+  const { t } = useTranslation();
+
   const problems = [
     {
       icon: Database,
-      title: "Dataöverflöd, Insiktsbrist",
-      description: "Finansiella prognoser, miljökonsekvensbeskrivningar och regulatoriska krav existerar i isolerade silos, vilket leder till fragmenterade beslut."
+      title: t('problem.fragmentedSystems.title'),
+      description: t('problem.fragmentedSystems.description')
     },
     {
       icon: AlertTriangle,
-      title: "Dolda Risker",
-      description: "Miljörisker förblir osynliga i traditionella finansiella kalkyler tills det är för sent och kostnaderna exploderar."
+      title: t('problem.hiddenRisks.title'),
+      description: t('problem.hiddenRisks.description')
     },
     {
       icon: TrendingDown,
-      title: "Strandade Tillgångar",
-      description: "Investeringar som inte tar hänsyn till hållbarhet riskerar att bli värdelösa när regulatoriska förändringar accelererar."
+      title: t('problem.suboptimalDecisions.title'),
+      description: t('problem.suboptimalDecisions.description')
     }
   ];
 
@@ -26,11 +29,10 @@ const ProblemSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Problemet: <span className="text-primary">Dataöverflöd, Insiktsbrist</span>
+            <span className="text-primary">{t('problem.title')}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Dagens beslutsfattare drunknar i data men svälter på handlingskraftiga insikter. 
-            Tre kritiska utmaningar blockerar vägen till hållbar lönsamhet.
+            {t('problem.subtitle')}
           </p>
         </div>
 

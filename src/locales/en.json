@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Home",
+    "product": "Product", 
+    "eroiLab": "EROI Lab",
+    "about": "About Us",
+    "contact": "Contact",
+    "bookDemo": "Book a Demo"
+  },
+  "hero": {
+    "title": "Transform Sustainability into Strategic Advantage",
+    "subtitle": "Humblify revolutionizes how companies make strategic decisions by integrating environmental impact directly into financial calculations. Discover the power of EROI - Energy Return on Investment.",
+    "primaryCta": "See Live Demo",
+    "secondaryCta": "Download Whitepaper",
+    "trustIndicator": "Trusted by leading companies in energy, manufacturing, and infrastructure"
+  },
+  "problem": {
+    "title": "Data Overflow, Insight Deficit", 
+    "subtitle": "Modern companies are drowning in data but lack tools to transform information into strategic advantages.",
+    "fragmentedSystems": {
+      "title": "Fragmented Systems",
+      "description": "Isolated silos prevent holistic view and strategic planning"
+    },
+    "hiddenRisks": {
+      "title": "Hidden Risks", 
+      "description": "Regulatory and environmental risks not visible in traditional calculations"
+    },
+    "suboptimalDecisions": {
+      "title": "Suboptimal Decisions",
+      "description": "Lack of sustainability factor integration leads to reduced profitability"
+    }
+  },
+  "solution": {
+    "title": "EROI: The Unifying Force",
+    "subtitle": "Our proprietary EROI methodology quantifies environmental impact in financial terms and integrates sustainability as a discipline in all strategic decisions.",
+    "keyBenefits": "Key Benefits:",
+    "benefits": {
+      "integration": "Integration of ESG data in investment calculations",
+      "riskReduction": "Reduction of regulatory and environmental risks", 
+      "transparency": "Radical transparency through quantified insights"
+    },
+    "processTitle": "Our Process:",
+    "process": {
+      "dataCollection": "Data collection from multiple sources",
+      "eroiCalculation": "EROI calculation and risk analysis",
+      "strategicIntegration": "Integration into strategic planning" 
+    }
+  },
+  "testimonials": {
+    "title": "Proven Impact",
+    "subtitle": "Leading companies have already transformed their strategic decisions with Humblify"
+  },
+  "eroiLab": {
+    "title": "EROI Lab: Interactive Calculator", 
+    "subtitle": "Explore how different investment parameters affect your Energy Return on Investment",
+    "investment": "Investment (MSEK)",
+    "energyOutput": "Energy Output (MWh/year)",
+    "operationalCost": "Operational Costs (%)",
+    "carbonPrice": "Carbon Price (SEK/ton)",
+    "results": "Results",
+    "eroiValue": "EROI Value",
+    "paybackPeriod": "Payback Period",
+    "carbonImpact": "Carbon Impact"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Strategy?",
+    "subtitle": "Book a personal demonstration and discover how EROI can revolutionize your investment decisions.",
+    "bookDemo": "Book Demo Now",
+    "downloadResource": "Download Resources"
+  },
+  "footer": {
+    "company": "Humblify AB", 
+    "description": "Revolutionizing strategic decisions through EROI-driven transparency and sustainable profitability.",
+    "contact": "Contact",
+    "quickLinks": "Quick Links",
+    "resources": "Resources", 
+    "newsletter": "Newsletter",
+    "newsletterText": "Get the latest insights on EROI and sustainable investment",
+    "subscribe": "Subscribe",
+    "copyright": "All rights reserved.",
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services", 
+      "contact": "Contact",
+      "whitepaper": "Whitepaper",
+      "caseStudies": "Case Studies",
+      "blog": "Blog",
+      "documentation": "Documentation"
+    }
+  }
+}

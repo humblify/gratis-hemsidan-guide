@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Download } from "lucide-react";
 
 const CTASection = () => {
+  const { t } = useTranslation();
   return (
     <section className="section-padding bg-gradient-to-br from-primary/5 via-background to-accent/5">
       <div className="container-custom">
@@ -12,26 +14,24 @@ const CTASection = () => {
           <div className="relative z-10">
             {/* Header */}
             <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Redo att Transformera Era{" "}
-              <span className="text-glow">Investeringsbeslut?</span>
+              <span className="text-glow">{t('cta.title')}</span>
             </h2>
 
             <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
-              Gå med i de ledande företag som redan använder EROI för att skapa hållbar lönsamhet. 
-              Boka en personlig demonstration och se hur vi kan optimera er portfölj.
+              {t('cta.subtitle')}
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
               <Button className="btn-hero text-lg group">
                 <Calendar className="mr-2 h-5 w-5" />
-                Boka Personlig Demo (15 min)
+                {t('cta.bookDemo')}
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
               <Button className="btn-secondary-hero text-lg group">
                 <Download className="mr-2 h-5 w-5" />
-                Ladda ner EROI White Paper
+                {t('cta.downloadResource')}
               </Button>
             </div>
 

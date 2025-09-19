@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Linkedin, Twitter, Github } from "lucide-react";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="bg-card/50 border-t border-border/50">
       <div className="container-custom">

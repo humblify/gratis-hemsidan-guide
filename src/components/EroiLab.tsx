@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Slider } from "@/components/ui/slider";
 import { Info, TrendingUp, Calculator } from "lucide-react";
 
 const EroiLab = () => {
+  const { t } = useTranslation();
   const [investment, setInvestment] = useState([10]);
   const [revenue, setRevenue] = useState([5]);
   const [emissions, setEmissions] = useState([1000]);
@@ -56,14 +58,14 @@ const EroiLab = () => {
             <Card className="card-glass p-8">
               <h3 className="text-2xl font-semibold mb-6 flex items-center gap-3">
                 <Calculator className="w-6 h-6 text-primary" />
-                Investeringsparametrar
+                {t('eroiLab.investment')}
               </h3>
 
               <div className="space-y-8">
                 {/* Investment Cost */}
                 <div>
                   <div className="flex justify-between items-center mb-4">
-                    <label className="font-medium">Investeringskostnad</label>
+                    <label className="font-medium">{t('eroiLab.investment')}</label>
                     <span className="text-primary font-bold">{investment[0]} M€</span>
                   </div>
                   <Slider
@@ -79,7 +81,7 @@ const EroiLab = () => {
                 {/* Annual Revenue */}
                 <div>
                   <div className="flex justify-between items-center mb-4">
-                    <label className="font-medium">Årlig Intäkt</label>
+                    <label className="font-medium">{t('eroiLab.energyOutput')}</label>
                     <span className="text-primary font-bold">{revenue[0]} M€</span>
                   </div>
                   <Slider
@@ -111,7 +113,7 @@ const EroiLab = () => {
                 {/* Carbon Price */}
                 <div>
                   <div className="flex justify-between items-center mb-4">
-                    <label className="font-medium">Koldioxidpris (€/ton)</label>
+                    <label className="font-medium">{t('eroiLab.carbonPrice')}</label>
                     <span className="text-primary font-bold">{carbonPrice[0]}€</span>
                   </div>
                   <Slider
@@ -131,7 +133,7 @@ const EroiLab = () => {
           <div className="space-y-8">
             {/* Main EROI Card */}
             <Card className="card-glow p-8 text-center">
-              <h3 className="text-xl font-semibold mb-4">Environmental Return on Investment</h3>
+              <h3 className="text-xl font-semibold mb-4">{t('eroiLab.eroiValue')}</h3>
               <div className="text-6xl font-bold text-glow mb-4">
                 {results.eroi}%
               </div>

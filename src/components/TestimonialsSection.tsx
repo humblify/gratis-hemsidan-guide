@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next';
 import { Star, Quote } from "lucide-react";
 
 const TestimonialsSection = () => {
+  const { t } = useTranslation();
   const testimonials = [
     {
       name: "Maria Lindberg",
@@ -31,11 +33,10 @@ const TestimonialsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Våra Kunder <span className="text-primary">Skapar Värde</span>
+            <span className="text-primary">{t('testimonials.title')}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ledande företag inom energi, tillverkning och infrastruktur använder redan 
-            EROI för att optimera sina investeringsportföljer.
+            {t('testimonials.subtitle')}
           </p>
         </div>
 

@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "home": "Hem",
+    "product": "Produkt",
+    "eroiLab": "EROI-labbet",
+    "about": "Om Oss",
+    "contact": "Kontakt",
+    "bookDemo": "Boka en Demo"
+  },
+  "hero": {
+    "title": "Förvandla Hållbarhet till Strategisk Fördel",
+    "subtitle": "Humblify revolutionerar hur företag fattar strategiska beslut genom att integrera miljöpåverkan direkt i finansiella kalkyler. Upptäck kraften i EROI - Energy Return on Investment.",
+    "primaryCta": "Se Live-Demo",
+    "secondaryCta": "Ladda Ner Whitepaper",
+    "trustIndicator": "Betrott av ledande företag inom energi, tillverkning och infrastruktur"
+  },
+  "problem": {
+    "title": "Dataöverflöd, Insiktsbrist",
+    "subtitle": "Moderna företag drunknar i data men saknar verktyg för att omvandla information till strategiska fördelar.",
+    "fragmentedSystems": {
+      "title": "Fragmenterade System",
+      "description": "Isolerade silos hindrar helhetssyn och strategisk planering"
+    },
+    "hiddenRisks": {
+      "title": "Dolda Risker",
+      "description": "Regulatoriska och miljörisker som inte synliggörs i traditionella kalkyler"
+    },
+    "suboptimalDecisions": {
+      "title": "Suboptimala Beslut",
+      "description": "Bristande integration av hållbarhetsfaktorer leder till försämrad lönsamhet"
+    }
+  },
+  "solution": {
+    "title": "EROI: Den Enande Kraften",
+    "subtitle": "Vår proprietära EROI-metodik kvantifierar miljöpåverkan i finansiella termer och integrerar hållbarhet som en disciplin i alla strategiska beslut.",
+    "keyBenefits": "Nyckelfördelar:",
+    "benefits": {
+      "integration": "Integrering av ESG-data i investeringskalkyler",
+      "riskReduction": "Reducering av regulatoriska och miljörisker",
+      "transparency": "Radikal transparens genom kvantifierade insikter"
+    },
+    "processTitle": "Vår Process:",
+    "process": {
+      "dataCollection": "Datainsamling från multipla källor",
+      "eroiCalculation": "EROI-beräkning och riskanalys", 
+      "strategicIntegration": "Integration i strategisk planering"
+    }
+  },
+  "testimonials": {
+    "title": "Bevisad Effekt",
+    "subtitle": "Ledande företag har redan transformerat sina strategiska beslut med Humblify"
+  },
+  "eroiLab": {
+    "title": "EROI-labbet: Interaktiv Kalkylator",
+    "subtitle": "Utforska hur olika investeringsparametrar påverkar din Energy Return on Investment",
+    "investment": "Investering (MSEK)",
+    "energyOutput": "Energiproduktion (MWh/år)",
+    "operationalCost": "Driftskostnader (%)",
+    "carbonPrice": "Koldioxidpris (SEK/ton)",
+    "results": "Resultat",
+    "eroiValue": "EROI-värde",
+    "paybackPeriod": "Återbetalningstid",
+    "carbonImpact": "Koldioxidpåverkan"
+  },
+  "cta": {
+    "title": "Redo att Transformera Din Strategi?",
+    "subtitle": "Boka en personlig demonstration och upptäck hur EROI kan revolutionera dina investeringsbeslut.",
+    "bookDemo": "Boka Demo Nu",
+    "downloadResource": "Ladda Ner Resurser"
+  },
+  "footer": {
+    "company": "Humblify AB",
+    "description": "Revolutionerar strategiska beslut genom EROI-driven transparens och hållbar lönsamhet.",
+    "contact": "Kontakt",
+    "quickLinks": "Snabblänkar",
+    "resources": "Resurser",
+    "newsletter": "Nyhetsbrev",
+    "newsletterText": "Få de senaste insikterna om EROI och hållbar investering",
+    "subscribe": "Prenumerera",
+    "copyright": "Alla rättigheter förbehållna.",
+    "links": {
+      "home": "Hem",
+      "about": "Om Oss", 
+      "services": "Tjänster",
+      "contact": "Kontakt",
+      "whitepaper": "Whitepaper",
+      "caseStudies": "Fallstudier",
+      "blog": "Blogg",
+      "documentation": "Dokumentation"
+    }
+  }
+}
