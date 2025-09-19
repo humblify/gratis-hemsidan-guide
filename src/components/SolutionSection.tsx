@@ -1,0 +1,101 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight, CheckCircle } from "lucide-react";
+import solutionImage from "@/assets/eroi-cube.jpg";
+
+const SolutionSection = () => {
+  const benefits = [
+    "Kvantifierar miljöpåverkan som konkreta finansiella nyckeltal",
+    "Integrerar hållbarhet direkt i investeringskalkyler",
+    "Eliminerar risken för 'greenwashing' genom radikal transparens",
+    "Optimerar portföljallokering baserat på EROI-värden"
+  ];
+
+  return (
+    <section className="section-padding">
+      <div className="container-custom">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Content */}
+          <div>
+            <div className="mb-8">
+              <span className="inline-block px-4 py-2 bg-success/10 border border-success/20 rounded-full text-success text-sm font-medium">
+                Vår Lösning
+              </span>
+            </div>
+
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+              <span className="text-primary">Hållbar Lönsamhet</span> som en Disciplin
+            </h2>
+
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              Environmental Return on Investment (EROI) omvandlar vag hållbarhet till 
+              kvantifierbara affärsnyckeltal som CFO:er kan förstå och agera på.
+            </p>
+
+            {/* Benefits List */}
+            <div className="space-y-4 mb-10">
+              {benefits.map((benefit, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-success mt-0.5 flex-shrink-0" />
+                  <p className="text-foreground">{benefit}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* CTA */}
+            <Button className="btn-hero group">
+              Se Plattformen i Aktion
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </div>
+
+          {/* Visual */}
+          <div className="relative">
+            <div className="card-glow p-8">
+              <img 
+                src={solutionImage} 
+                alt="EROI Visualization - Environmental Return on Investment Analysis"
+                className="w-full h-auto rounded-lg shadow-elegant"
+              />
+            </div>
+
+            {/* Floating metrics */}
+            <div className="absolute -top-4 -right-4 card-glass p-4 min-w-[140px]">
+              <div className="text-2xl font-bold text-success">+23.4%</div>
+              <div className="text-sm text-muted-foreground">EROI Förbättring</div>
+            </div>
+
+            <div className="absolute -bottom-4 -left-4 card-glass p-4 min-w-[140px]">
+              <div className="text-2xl font-bold text-primary">€2.4M</div>
+              <div className="text-sm text-muted-foreground">Riskjusterat Värde</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Process Flow */}
+        <div className="mt-24">
+          <h3 className="text-2xl font-bold text-center mb-12">
+            Från Kaos till <span className="text-primary">Klarhet</span> på tre steg
+          </h3>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { step: "01", title: "Samla & Strukturera", desc: "AI-driven datainsamling från alla källor" },
+              { step: "02", title: "Analysera & Kvantifiera", desc: "EROI-beräkningar med full transparens" },
+              { step: "03", title: "Optimera & Agera", desc: "Handlingskraftiga rekommendationer" }
+            ].map((item, index) => (
+              <div key={index} className="text-center group">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                  <span className="text-primary font-bold">{item.step}</span>
+                </div>
+                <h4 className="text-lg font-semibold mb-2">{item.title}</h4>
+                <p className="text-muted-foreground">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SolutionSection;
