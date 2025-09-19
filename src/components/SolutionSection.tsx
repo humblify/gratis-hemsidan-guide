@@ -32,10 +32,36 @@ const SolutionSection = () => {
               {t('solution.subtitle')}
             </p>
 
+            {/* AI Description */}
+            <p className="text-lg text-muted-foreground/80 mb-8 leading-relaxed">
+              {t('solution.description')}
+            </p>
+
+            {/* Four Principles */}
+            <h3 className="text-lg font-semibold mb-6">{t('solution.fourPrinciples')}</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              {[
+                { title: "Radical Transparency", description: "Glass Box AI vs Black Box - Complete auditability through ExplanationTree methodology" },
+                { title: "Integrated Decision-Making", description: "ESG and financial analysis unified into a single disciplined approach to strategic planning" },
+                { title: "Predictive Risk Management", description: "Advanced modeling of regulatory, environmental, and transition risks before they impact operations" },
+                { title: "Sustainable Profitability", description: "Long-term value creation through disciplined sustainability integration and risk-adjusted returns" }
+              ].map((principle, index) => (
+                <div key={index} className="p-4 bg-card/50 border border-border/50 rounded-lg">
+                  <h4 className="font-semibold text-primary mb-2">{principle.title}</h4>
+                  <p className="text-sm text-muted-foreground">{principle.description}</p>
+                </div>
+              ))}
+            </div>
+
             {/* Benefits List */}
             <h3 className="text-lg font-semibold mb-6">{t('solution.keyBenefits')}</h3>
             <div className="space-y-4 mb-10">
-              {benefits.map((benefit, index) => (
+              {[
+                t('solution.benefits.integration'),
+                t('solution.benefits.riskReduction'),
+                t('solution.benefits.transparency'),
+                t('solution.benefits.aiSystem')
+              ].map((benefit, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 text-success mt-0.5 flex-shrink-0" />
                   <p className="text-foreground">{benefit}</p>

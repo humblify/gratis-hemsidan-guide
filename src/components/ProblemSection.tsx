@@ -65,7 +65,7 @@ const ProblemSection = () => {
         <div className="mt-16 text-center">
           <div className="inline-block p-4 bg-destructive/10 rounded-xl border border-destructive/20">
             <p className="text-destructive font-medium">
-              Resultat: Suboptimala beslut, förhöjda risker och missade möjligheter
+              {t('problem.resultMessage')}
             </p>
           </div>
         </div>

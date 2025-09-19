@@ -9,10 +9,12 @@
   },
   "hero": {
     "title": "Förvandla Hållbarhet till Strategisk Fördel",
-    "subtitle": "Humblify revolutionerar hur företag fattar strategiska beslut genom att integrera miljöpåverkan direkt i finansiella kalkyler. Upptäck kraften i EROI - Energy Return on Investment.",
+    "subtitle": "AI-driven plattform som integrerar hållbarhet och lönsamhet till en enhetlig disciplin. Upptäck kraften i EROI - Environmental Return on Investment.",
+    "description": "Humblify revolutionerar strategiskt beslutsfattande inom kapitalintensiva industrier genom radikal transparens och disciplinerad hållbarhetsintegration.",
     "primaryCta": "Se Live-Demo",
     "secondaryCta": "Ladda Ner Whitepaper",
-    "trustIndicator": "Betrott av ledande företag inom energi, tillverkning och infrastruktur"
+    "trustIndicator": "Betrott av kapitalintensiva industrier inom energi, tillverkning och infrastruktur",
+    "marketStats": "2+ miljarder EUR marknad, 28% CAGR för AI-driven ESG-lösningar"
   },
   "problem": {
     "title": "Dataöverflöd, Insiktsbrist",
@@ -32,18 +34,39 @@
   },
   "solution": {
     "title": "EROI: Den Enande Kraften",
-    "subtitle": "Vår proprietära EROI-metodik kvantifierar miljöpåverkan i finansiella termer och integrerar hållbarhet som en disciplin i alla strategiska beslut.",
+    "subtitle": "Vår proprietära Environmental Return on Investment-metodik kvantifierar miljöpåverkan i finansiella termer och integrerar hållbarhet som en enhetlig disciplin i alla strategiska beslut.",
+    "description": "Driven av vårt AI Multi-Agent System som orkestrerar dataintegration, analys och strategisk kommunikation för radikal transparens.",
+    "fourPrinciples": "De Fyra Kärnprinciperna:",
+    "principles": {
+      "transparency": {
+        "title": "Radikal Transparens",
+        "description": "Glaslåda-AI vs Svartlåde-AI - Fullständig spårbarhet genom ExplanationTree-metodologi"
+      },
+      "integration": {
+        "title": "Integrerat Beslutsfattande",
+        "description": "ESG och finansiell analys förenad till en enda disciplinerad approach för strategisk planering"
+      },
+      "predictive": {
+        "title": "Prediktiv Riskhantering",
+        "description": "Avancerad modellering av regulatoriska, miljömässiga och transitionsrisker innan de påverkar verksamheten"
+      },
+      "profitability": {
+        "title": "Hållbar Lönsamhet",
+        "description": "Långsiktig värdeskapande genom disciplinerad hållbarhetsintegration och riskjusterad avkastning"
+      }
+    },
     "keyBenefits": "Nyckelfördelar:",
     "benefits": {
-      "integration": "Integrering av ESG-data i investeringskalkyler",
-      "riskReduction": "Reducering av regulatoriska och miljörisker",
-      "transparency": "Radikal transparens genom kvantifierade insikter"
+      "integration": "Komplett integrering av ESG-data i investeringskalkyler och strategisk planering",
+      "riskReduction": "Proaktiv reducering av regulatoriska, miljömässiga och stranded asset-risker",
+      "transparency": "Radikal transparens genom kvantifierade insikter och fullständiga revisionsspår",
+      "aiSystem": "AI Multi-Agent orkestrering för sömlös databehandling och strategiska insikter"
     },
-    "processTitle": "Vår Process:",
+    "processTitle": "Vår AI-drivna Process:",
     "process": {
-      "dataCollection": "Datainsamling från multipla källor",
-      "eroiCalculation": "EROI-beräkning och riskanalys", 
-      "strategicIntegration": "Integration i strategisk planering"
+      "dataCollection": "Multi-källa dataorkestrering och validering",
+      "eroiCalculation": "Environmental Return on Investment-beräkning med shadow pricing",
+      "strategicIntegration": "Integration i strategisk planering med prediktiv riskmodellering"
     }
   },
   "testimonials": {
@@ -52,15 +75,24 @@
   },
   "eroiLab": {
     "title": "EROI-labbet: Interaktiv Kalkylator",
-    "subtitle": "Utforska hur olika investeringsparametrar påverkar din Energy Return on Investment",
+    "subtitle": "Utforska hur olika investeringsparametrar påverkar din Environmental Return on Investment genom vårt avancerade modelleringssystem",
+    "description": "Upplev radikal transparens - se exakt hur miljöfaktorer integreras med finansiella kalkyler i realtid.",
     "investment": "Investering (MSEK)",
-    "energyOutput": "Energiproduktion (MWh/år)",
-    "operationalCost": "Driftskostnader (%)",
+    "revenue": "Årlig Omsättning (MSEK)",
+    "emissions": "CO2-Utsläpp (ton/år)",
     "carbonPrice": "Koldioxidpris (SEK/ton)",
-    "results": "Resultat",
+    "waterUsage": "Vattenanvändning (m³/år)",
+    "wasteGeneration": "Avfallsgenerering (ton/år)",
+    "results": "Environmental ROI-Analys",
     "eroiValue": "EROI-värde",
-    "paybackPeriod": "Återbetalningstid",
-    "carbonImpact": "Koldioxidpåverkan"
+    "paybackPeriod": "Riskjusterad Återbetalningstid",
+    "carbonImpact": "Miljökostnadspåverkan",
+    "npvAnalysis": "NPV-Analys",
+    "irrCalculation": "Internränta",
+    "scenarioComparison": "Scenariojämförelse",
+    "explanationTree": "Kalkyltransparens",
+    "shadowPricing": "Shadow Pricing Tillämpat",
+    "uniqueValue": "Till skillnad från traditionella kalkylatorer ger vårt EROI-labb fullständig transparens i hur miljöfaktorer integreras med finansiella mätvärden - glaslåda-approachen till hållbar investeringsanalys."
   },
   "cta": {
     "title": "Redo att Transformera Din Strategi?",

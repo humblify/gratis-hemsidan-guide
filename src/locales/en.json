@@ -9,41 +9,65 @@
   },
   "hero": {
     "title": "Transform Sustainability into Strategic Advantage",
-    "subtitle": "Humblify revolutionizes how companies make strategic decisions by integrating environmental impact directly into financial calculations. Discover the power of EROI - Energy Return on Investment.",
+    "subtitle": "AI-driven platform that integrates sustainability and profitability into a unified discipline. Discover the power of EROI - Environmental Return on Investment.",
+    "description": "Humblify revolutionizes strategic decision-making in capital-intensive industries through radical transparency and disciplined sustainability integration.",
     "primaryCta": "See Live Demo",
-    "secondaryCta": "Download Whitepaper",
-    "trustIndicator": "Trusted by leading companies in energy, manufacturing, and infrastructure"
+    "secondaryCta": "Download Whitepaper", 
+    "trustIndicator": "Trusted by capital-intensive industries in energy, manufacturing, and infrastructure",
+    "marketStats": "€2+ billion market, 28% CAGR for AI-driven ESG solutions"
   },
   "problem": {
     "title": "Data Overflow, Insight Deficit", 
-    "subtitle": "Modern companies are drowning in data but lack tools to transform information into strategic advantages.",
+    "subtitle": "Capital-intensive industries generate massive data volumes but lack integrated tools to transform fragmented information into strategic competitive advantages.",
     "fragmentedSystems": {
       "title": "Fragmented Systems",
-      "description": "Isolated silos prevent holistic view and strategic planning"
+      "description": "Financial, Environmental, and Social data trapped in isolated silos, preventing holistic strategic planning and integrated decision-making"
     },
     "hiddenRisks": {
       "title": "Hidden Risks", 
-      "description": "Regulatory and environmental risks not visible in traditional calculations"
+      "description": "Stranded assets, regulatory risks (CSRD, EU Taxonomy), and environmental liabilities invisible in traditional financial calculations"
     },
     "suboptimalDecisions": {
       "title": "Suboptimal Decisions",
-      "description": "Lack of sustainability factor integration leads to reduced profitability"
-    }
+      "description": "Missing integration of externalities and sustainability factors leads to reduced long-term profitability and competitive disadvantage"
+    },
+    "resultMessage": "Result: Suboptimal decisions, elevated risks, and missed opportunities in a rapidly changing regulatory landscape"
   },
   "solution": {
     "title": "EROI: The Unifying Force",
-    "subtitle": "Our proprietary EROI methodology quantifies environmental impact in financial terms and integrates sustainability as a discipline in all strategic decisions.",
+    "subtitle": "Our proprietary Environmental Return on Investment methodology quantifies environmental impact in financial terms, integrating sustainability as a unified discipline in all strategic decisions.",
+    "description": "Powered by our AI Multi-Agent System that orchestrates data integration, analysis, and strategic communication for radical transparency.",
+    "fourPrinciples": "The Four Core Principles:",
+    "principles": {
+      "transparency": {
+        "title": "Radical Transparency",
+        "description": "Glass Box AI vs Black Box - Complete auditability through ExplanationTree methodology"
+      },
+      "integration": {
+        "title": "Integrated Decision-Making", 
+        "description": "ESG and financial analysis unified into a single disciplined approach to strategic planning"
+      },
+      "predictive": {
+        "title": "Predictive Risk Management",
+        "description": "Advanced modeling of regulatory, environmental, and transition risks before they impact operations"
+      },
+      "profitability": {
+        "title": "Sustainable Profitability",
+        "description": "Long-term value creation through disciplined sustainability integration and risk-adjusted returns"
+      }
+    },
     "keyBenefits": "Key Benefits:",
     "benefits": {
-      "integration": "Integration of ESG data in investment calculations",
-      "riskReduction": "Reduction of regulatory and environmental risks", 
-      "transparency": "Radical transparency through quantified insights"
+      "integration": "Complete integration of ESG data in investment calculations and strategic planning",
+      "riskReduction": "Proactive reduction of regulatory, environmental, and stranded asset risks", 
+      "transparency": "Radical transparency through quantified insights and complete audit trails",
+      "aiSystem": "AI Multi-Agent orchestration for seamless data processing and strategic insights"
     },
-    "processTitle": "Our Process:",
+    "processTitle": "Our AI-Driven Process:",
     "process": {
-      "dataCollection": "Data collection from multiple sources",
-      "eroiCalculation": "EROI calculation and risk analysis",
-      "strategicIntegration": "Integration into strategic planning" 
+      "dataCollection": "Multi-source data orchestration and validation",
+      "eroiCalculation": "Environmental Return on Investment calculation with shadow pricing", 
+      "strategicIntegration": "Integration into strategic planning with predictive risk modeling"
     }
   },
   "testimonials": {
@@ -52,15 +76,24 @@
   },
   "eroiLab": {
     "title": "EROI Lab: Interactive Calculator", 
-    "subtitle": "Explore how different investment parameters affect your Energy Return on Investment",
+    "subtitle": "Explore how different investment parameters affect your Environmental Return on Investment through our advanced modeling system",
+    "description": "Experience radical transparency - see exactly how environmental factors integrate with financial calculations in real-time.",
     "investment": "Investment (MSEK)",
-    "energyOutput": "Energy Output (MWh/year)",
-    "operationalCost": "Operational Costs (%)",
+    "revenue": "Annual Revenue (MSEK)",
+    "emissions": "CO2 Emissions (tons/year)",
     "carbonPrice": "Carbon Price (SEK/ton)",
-    "results": "Results",
+    "waterUsage": "Water Usage (m³/year)",
+    "wasteGeneration": "Waste Generation (tons/year)",
+    "results": "Environmental ROI Analysis",
     "eroiValue": "EROI Value",
-    "paybackPeriod": "Payback Period",
-    "carbonImpact": "Carbon Impact"
+    "paybackPeriod": "Risk-Adjusted Payback",
+    "carbonImpact": "Environmental Cost Impact",
+    "npvAnalysis": "NPV Analysis",
+    "irrCalculation": "Internal Rate of Return",
+    "scenarioComparison": "Scenario Comparison",
+    "explanationTree": "Calculation Transparency",
+    "shadowPricing": "Shadow Pricing Applied",
+    "uniqueValue": "Unlike traditional calculators, our EROI Lab provides complete transparency into how environmental factors integrate with financial metrics - the glass box approach to sustainable investment analysis."
   },
   "cta": {
     "title": "Ready to Transform Your Strategy?",

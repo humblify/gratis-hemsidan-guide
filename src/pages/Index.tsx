@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import EroiLab from "@/components/EroiLab";
+import EnhancedEroiLab from "@/components/EnhancedEroiLab";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -15,7 +15,7 @@ const Index = () => {
         <HeroSection />
         <ProblemSection />
         <SolutionSection />
-        <EroiLab />
+        <EnhancedEroiLab />
         <TestimonialsSection />
         <CTASection />
       </main>

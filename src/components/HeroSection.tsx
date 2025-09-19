@@ -25,14 +25,26 @@ const HeroSection = () => {
             </span>
           </div>
 
+          {/* Market Stats */}
+          <div className="mb-8">
+            <span className="inline-block px-4 py-2 bg-success/10 border border-success/20 rounded-full text-success text-xs font-medium backdrop-blur-sm">
+              {t('hero.marketStats')}
+            </span>
+          </div>
+
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
             <span className="text-glow">{t('hero.title')}</span>
           </h1>
 
           {/* Sub-headline */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-6 leading-relaxed max-w-3xl mx-auto">
             {t('hero.subtitle')}
+          </p>
+
+          {/* Description */}  
+          <p className="text-lg text-muted-foreground/80 mb-12 leading-relaxed max-w-2xl mx-auto">
+            {t('hero.description')}
           </p>
 
           {/* CTA Buttons */}
