@@ -22,9 +22,9 @@ const Navigation = () => {
             <a href="/" className="text-foreground hover:text-primary transition-colors">
               {t('nav.home')}
             </a>
-    <a href="/platform" className="text-foreground hover:text-primary transition-colors">
-      Platform
-    </a>
+            <a href="/platform" className="text-foreground hover:text-primary transition-colors">
+              {t('nav.platform')}
+            </a>
             <a href="/#eroi-lab" className="text-foreground hover:text-primary transition-colors">
               {t('nav.eroiLab')}
             </a>
@@ -72,7 +72,7 @@ const Navigation = () => {
                 className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Platform
+                {t('nav.platform')}
               </a>
               <a
                 href="/#eroi-lab"

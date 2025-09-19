@@ -15,6 +15,34 @@
     "contact": {
       "title": "Contact Humblify - Book EROI Demo | Get Started Today",
       "description": "Ready to transform your strategic decisions? Book a personalized EROI platform demonstration and discover sustainable profitability solutions."
+    },
+    "platform": {
+      "title": "Platform Overview - ESG & EROI Solutions | Humblify",
+      "description": "Explore Humblify's comprehensive ESG platform featuring EROI analytics, risk management, and sustainability integration tools."
+    },
+    "eroi-lab": {
+      "title": "EROI Lab - Interactive Environmental ROI Calculator | Humblify",
+      "description": "Calculate Environmental Return on Investment with our interactive EROI Lab. Advanced shadow pricing and sustainability analysis."
+    },
+    "analytics": {
+      "title": "Analytics Dashboard - ESG Performance Monitoring | Humblify",
+      "description": "Monitor ESG performance with real-time dashboards, predictive analytics, and comprehensive sustainability reporting tools."
+    },
+    "risk-management": {
+      "title": "Risk Management - ESG & Climate Risk Solutions | Humblify",
+      "description": "Identify and mitigate ESG risks with AI-powered risk assessment, regulatory monitoring, and strategic planning tools."
+    },
+    "esg-integration": {
+      "title": "ESG Integration - Sustainable Business Solutions | Humblify",
+      "description": "Integrate ESG into business strategy with comprehensive frameworks, compliance tools, and performance measurement."
+    },
+    "case-studies": {
+      "title": "Case Studies - ESG Success Stories | Humblify",
+      "description": "Discover how leading companies achieve ESG success with Humblify's EROI methodology and sustainability solutions."
+    },
+    "documentation": {
+      "title": "Documentation - Resources & Guides | Humblify",
+      "description": "Access comprehensive guides, API documentation, and training materials for ESG and EROI implementation success."
     }
   },
   "sidebar": {
@@ -40,6 +68,7 @@
   "nav": {
     "home": "Home",
     "product": "Platform", 
+    "platform": "Platform",
     "eroiLab": "EROI Lab",
     "about": "About",
     "contact": "Contact",

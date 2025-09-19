@@ -15,13 +15,41 @@
     "contact": {
       "title": "Kontakta Humblify - Boka EROI-Demo | Kom Igång Idag",
       "description": "Redo att transformera dina strategiska beslut? Boka en personlig EROI-plattformsdemonstration och upptäck lösningar för hållbar lönsamhet."
+    },
+    "platform": {
+      "title": "Plattformsöversikt - ESG & EROI-lösningar | Humblify",
+      "description": "Utforska Humblifys omfattande ESG-plattform med EROI-analys, riskhantering och hållbarhetsintegrationsverktyg."
+    },
+    "eroi-lab": {
+      "title": "EROI Lab - Interaktiv miljöavkastningskalkylator | Humblify",
+      "description": "Beräkna Environmental Return on Investment med vårt interaktiva EROI Lab. Avancerad skuggprissättning och hållbarhetsanalys."
+    },
+    "analytics": {
+      "title": "Analysdashboard - ESG-prestandaövervakning | Humblify",
+      "description": "Övervaka ESG-prestanda med realtidsdashboards, prediktiv analys och omfattande hållbarhetsrapporteringsverktyg."
+    },
+    "risk-management": {
+      "title": "Riskhantering - ESG & klimatriskslösningar | Humblify",
+      "description": "Identifiera och mildra ESG-risker med AI-driven riskbedömning, regulatorisk övervakning och strategiska planeringsverktyg."
+    },
+    "esg-integration": {
+      "title": "ESG-integration - Hållbara affärslösningar | Humblify",
+      "description": "Integrera ESG i affärsstrategi med omfattande ramverk, verktyg för regelefterlevnad och prestationsmätning."
+    },
+    "case-studies": {
+      "title": "Fallstudier - ESG-framgångshistorier | Humblify",
+      "description": "Upptäck hur ledande företag uppnår ESG-framgång med Humblifys EROI-metodik och hållbarhetslösningar."
+    },
+    "documentation": {
+      "title": "Dokumentation - Resurser & guider | Humblify",
+      "description": "Få tillgång till omfattande guider, API-dokumentation och utbildningsmaterial för framgångsrik ESG- och EROI-implementering."
     }
   },
   "sidebar": {
     "platform": {
       "title": "Plattform",
       "overview": "Översikt",
-      "eroiLab": "EROI Lab", 
+      "eroiLab": "EROI Lab",
       "analytics": "Analys"
     },
     "solutions": {
