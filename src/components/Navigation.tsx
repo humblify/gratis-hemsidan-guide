@@ -19,20 +19,20 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-foreground hover:text-primary transition-colors">
-              {t('nav.home')}
+            <a href="/" className="text-foreground hover:text-primary transition-colors font-medium">
+              Hem
             </a>
-            <a href="/platform" className="text-foreground hover:text-primary transition-colors">
-              {t('nav.platform')}
+            <a href="/platform" className="text-foreground hover:text-primary transition-colors font-medium">
+              Plattform
             </a>
-            <a href="/#eroi-lab" className="text-foreground hover:text-primary transition-colors">
-              {t('nav.eroiLab')}
+            <a href="/use-cases" className="text-foreground hover:text-primary transition-colors font-medium">
+              Användningsfall
             </a>
-            <a href="/about" className="text-foreground hover:text-primary transition-colors">
-              {t('nav.about')}
+            <a href="/resources" className="text-foreground hover:text-primary transition-colors font-medium">
+              Resurser
             </a>
-            <a href="/contact" className="text-foreground hover:text-primary transition-colors">
-              {t('nav.contact')}
+            <a href="/contact" className="text-foreground hover:text-primary transition-colors font-medium">
+              Kontakt
             </a>
           </div>
 
@@ -62,38 +62,38 @@ const Navigation = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 bg-card/50 backdrop-blur-lg rounded-lg mt-2">
               <a
                 href="/"
-                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                {t('nav.home')}
+                Hem
               </a>
               <a
                 href="/platform"
-                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                {t('nav.platform')}
+                Plattform
               </a>
               <a
-                href="/#eroi-lab"
-                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                href="/use-cases"
+                className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                {t('nav.eroiLab')}
+                Användningsfall
               </a>
               <a
-                href="/about"
-                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                href="/resources"
+                className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                {t('nav.about')}
+                Resurser
               </a>
               <a
                 href="/contact"
-                className="block px-3 py-2 text-foreground hover:text-primary transition-colors"
+                className="block px-3 py-2 text-foreground hover:text-primary transition-colors font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                {t('nav.contact')}
+                Kontakt
               </a>
               <div className="pt-4 space-y-2">
                 <div className="flex justify-center">
