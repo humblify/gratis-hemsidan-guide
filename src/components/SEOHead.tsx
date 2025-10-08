@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 
 interface SEOHeadProps {
-  page: 'home' | 'product' | 'about' | 'contact' | 'platform' | 'eroi-lab' | 'analytics' | 'risk-management' | 'esg-integration' | 'case-studies' | 'documentation';
+  page: 'home' | 'product' | 'about' | 'contact' | 'platform' | 'eroi-lab' | 'analytics' | 'risk-management' | 'esg-integration' | 'case-studies' | 'documentation' | 'resources' | 'use-cases';
   customTitle?: string;
   customDescription?: string;
 }
