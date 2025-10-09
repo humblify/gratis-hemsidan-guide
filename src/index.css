@@ -8,60 +8,68 @@ All colors MUST be HSL following Palantir-inspired dark aesthetic.
 
 @layer base {
   :root {
-    /* Humblify Dark Theme - Cinematic Data Visualization */
-    --background: 215 25% 6.5%; /* Deep charcoal #0D1117 */
+    /* Humblify Palantir-Standard - Cinematic Dark Theme */
+    --background: 217 19% 6%; /* Deep charcoal #0D1117 */
     --foreground: 210 40% 98%; /* Pure white text */
     
-    --card: 220 20% 10%; /* #161B22 Dark cards */
+    --card: 217 19% 9%; /* #13171F Darker cards */
     --card-foreground: 210 40% 98%;
     
-    --popover: 220 20% 10%;
+    --popover: 217 19% 9%;
     --popover-foreground: 210 40% 98%;
     
-    /* Primary - Bright cyan accent for CTAs and highlights */
-    --primary: 185 100% 60%; /* Bright cyan #00D4E6 */
-    --primary-foreground: 220 20% 10%;
+    /* Primary - Bright cyan #00D4E6 for CTAs */
+    --primary: 186 100% 45%; /* Bright cyan #00D4E6 */
+    --primary-foreground: 217 19% 6%;
     
-    --secondary: 220 15% 15%; /* Subtle dark gray */
+    --secondary: 217 19% 13%; /* Subtle dark gray */
     --secondary-foreground: 210 40% 98%;
     
-    --muted: 220 15% 15%;
-    --muted-foreground: 215 15% 65%;
+    --muted: 217 19% 13%;
+    --muted-foreground: 215 16% 55%;
     
-    --accent: 185 100% 60%; /* Cyan accent */
-    --accent-foreground: 220 20% 10%;
+    --accent: 186 100% 45%; /* Cyan accent */
+    --accent-foreground: 217 19% 6%;
     
     /* Semantic colors for data visualization */
-    --success: 142 76% 36%; /* Green for positive metrics */
+    --success: 142 71% 45%; /* Green for positive metrics */
     --success-foreground: 210 40% 98%;
     
-    --warning: 38 92% 50%; /* Amber for warnings */
-    --warning-foreground: 220 20% 10%;
+    --warning: 45 93% 47%; /* Gold/Orange for highlights */
+    --warning-foreground: 217 19% 6%;
     
-    --destructive: 0 84% 60%; /* Red for negative metrics */
+    --destructive: 0 72% 51%; /* Red for negative metrics */
     --destructive-foreground: 210 40% 98%;
     
-    --border: 220 15% 20%; /* Subtle border */
-    --input: 220 15% 20%;
-    --ring: 185 100% 60%; /* Cyan focus ring */
+    --border: 217 19% 15%; /* Subtle border */
+    --input: 217 19% 15%;
+    --ring: 186 100% 45%; /* Cyan focus ring */
     
-    --radius: 0.75rem; /* Slightly more rounded for modern feel */
+    --radius: 0.75rem;
     
-    /* Gradients for cinematic effects */
-    --gradient-primary: linear-gradient(135deg, hsl(185 100% 60%), hsl(200 100% 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(215 25% 6.5%), hsl(220 20% 12%));
-    --gradient-card: linear-gradient(135deg, hsl(220 20% 10%), hsl(220 15% 15%));
+    /* Custom colors for Humblify */
+    --gold: 45 93% 47%; /* Gold accent for premium features */
+    --gold-foreground: 217 19% 6%;
     
-    /* Shadows for depth */
-    --shadow-elegant: 0 25px 50px -12px hsl(185 100% 60% / 0.25);
-    --shadow-glow: 0 0 40px hsl(185 100% 60% / 0.4);
-    --shadow-card: 0 10px 30px -10px hsl(215 25% 3% / 0.5);
+    /* Glassmorphism */
+    --glass-bg: rgba(19, 23, 31, 0.7);
+    --glass-border: rgba(0, 212, 230, 0.2);
     
-    /* Animation timing */
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(186 100% 45%), hsl(200 100% 55%));
+    --gradient-gold: linear-gradient(135deg, hsl(45 93% 47%), hsl(35 100% 55%));
+    --gradient-hero: linear-gradient(180deg, hsl(217 19% 6%), hsl(217 19% 9%));
+    --gradient-subtle: linear-gradient(180deg, hsl(217 19% 9%), hsl(217 19% 6%));
+    
+    /* Shadows */
+    --shadow-elegant: 0 25px 50px -12px rgba(0, 212, 230, 0.25);
+    --shadow-glow: 0 0 40px rgba(0, 212, 230, 0.4);
+    --shadow-gold: 0 0 30px rgba(251, 191, 36, 0.3);
+    
+    /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     
-    /* Typography scale */
+    /* Typography */
     --font-display: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   }
@@ -123,50 +131,91 @@ All colors MUST be HSL following Palantir-inspired dark aesthetic.
 }
 
 @layer components {
-  /* Hero button variant */
+  /* Hero CTA button - Cyan gradient */
   .btn-hero {
-    @apply bg-gradient-to-r from-primary to-accent text-background font-semibold px-8 py-4 rounded-xl;
+    @apply bg-gradient-to-r from-primary to-accent text-card font-bold px-8 py-4 rounded-xl;
     @apply transform hover:scale-105 transition-all duration-300;
-    @apply border border-primary/20 backdrop-blur-sm;
-    box-shadow: 0 0 40px hsl(var(--primary) / 0.4);
+    @apply border border-primary/30 backdrop-blur-sm;
+    box-shadow: var(--shadow-glow);
   }
   
   .btn-hero:hover {
-    box-shadow: 0 0 60px hsl(var(--primary) / 0.6);
+    box-shadow: 0 0 60px rgba(0, 212, 230, 0.6);
   }
   
+  /* Gold button variant for premium features */
+  .btn-gold {
+    background: linear-gradient(to right, hsl(var(--warning)), hsl(var(--warning) / 0.8));
+    @apply text-card font-bold px-8 py-4 rounded-xl;
+    @apply transform hover:scale-105 transition-all duration-300;
+    border: 1px solid hsl(var(--warning) / 0.3);
+    @apply backdrop-blur-sm;
+    box-shadow: var(--shadow-gold);
+  }
+  
+  .btn-gold:hover {
+    box-shadow: 0 0 60px rgba(251, 191, 36, 0.5);
+  }
+  
+  /* Secondary hero button */
   .btn-secondary-hero {
     @apply bg-card/50 text-foreground font-semibold px-8 py-4 rounded-xl;
-    @apply border border-primary/20 hover:border-primary/50 backdrop-blur-sm;
+    @apply border border-primary/20 hover:border-primary/50 backdrop-blur-md;
     @apply hover:bg-card/80 transform hover:scale-105 transition-all duration-300;
   }
 
-  /* Card variants */
+  /* Glassmorphism card */
   .card-glass {
-    @apply bg-gradient-to-br from-card/80 to-card/40 backdrop-blur-sm;
-    @apply border border-border/50 rounded-xl;
-    box-shadow: 0 10px 30px -10px hsl(var(--background) / 0.5);
+    background: var(--glass-bg);
+    @apply backdrop-blur-md border rounded-xl;
+    border-color: var(--glass-border);
+    box-shadow: var(--shadow-elegant);
   }
 
+  /* Glowing card with primary accent */
   .card-glow {
     @apply bg-gradient-to-br from-card to-card/80;
     @apply border border-primary/20 rounded-xl;
-    box-shadow: 0 25px 50px -12px hsl(var(--primary) / 0.25);
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .card-glow:hover {
+    @apply border-primary/40;
+    box-shadow: var(--shadow-glow);
   }
 
-  /* Text glow effect */
+  /* Text effects */
   .text-glow {
-    text-shadow: 0 0 20px hsl(var(--primary) / 0.5);
+    text-shadow: 0 0 30px rgba(0, 212, 230, 0.6);
     @apply text-primary;
+  }
+  
+  .text-gold-glow {
+    text-shadow: 0 0 30px rgba(251, 191, 36, 0.5);
+    color: hsl(var(--warning));
   }
 
   /* Section spacing */
   .section-padding {
-    @apply py-24 px-6;
+    @apply py-24 md:py-32 px-6;
   }
 
-  /* Container max width */
+  /* Container */
   .container-custom {
     @apply max-w-7xl mx-auto;
+  }
+  
+  /* Subtle animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 }

@@ -1,0 +1,40 @@
+{
+  "seo": {
+    "home": {
+      "title": "Humblify | Plateforme EROI pilotée par l'IA pour la rentabilité durable",
+      "description": "Humblify transforme la prise de décision stratégique. Intégrez des données financières et environnementales avec notre plateforme IA pour maximiser votre Retour sur Investissement Environnemental (EROI)."
+    },
+    "product": {
+      "title": "Produit | Plateforme EROI Humblify",
+      "description": "Découvrez la plateforme EROI pilotée par l'IA de Humblify. Analyse ESG et financière unifiée pour la prise de décision stratégique."
+    },
+    "about": {
+      "title": "À propos | Humblify",
+      "description": "En savoir plus sur Humblify, notre mission et l'équipe derrière la révolution EROI."
+    },
+    "contact": {
+      "title": "Contact | Humblify",
+      "description": "Contactez Humblify pour une démo stratégique. Transformez votre prise de décision."
+    }
+  },
+  "nav": {
+    "sidebar": {
+      "platform": "Plateforme",
+      "solutions": "Solutions",
+      "resources": "Ressources"
+    },
+    "home": "Accueil",
+    "platform": "Plateforme",
+    "useCases": "Cas d'usage",
+    "resources": "Ressources",
+    "about": "À propos",
+    "contact": "Contact",
+    "bookDemo": "Réserver une démo"
+  },
+  "hero": {
+    "title": "Au-delà du ROI. Bienvenue à l'EROI.",
+    "subtitle": "Humblify est la plateforme pilotée par l'IA qui intègre la rentabilité financière avec l'impact environnemental réel.",
+    "cta": "Réserver une démo stratégique",
+    "secondaryCta": "Voir la plateforme"
+  }
+}

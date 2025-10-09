@@ -1,0 +1,40 @@
+{
+  "seo": {
+    "home": {
+      "title": "Humblify | KI-gesteuerte EROI-Plattform für nachhaltige Rentabilität",
+      "description": "Humblify transformiert strategische Entscheidungsfindung. Integrieren Sie Finanz- und Umweltdaten mit unserer KI-Plattform, um Ihren Environmental Return on Investment (EROI) zu maximieren."
+    },
+    "product": {
+      "title": "Produkt | Humblify EROI-Plattform",
+      "description": "Entdecken Sie die KI-gesteuerte EROI-Plattform von Humblify. Vereinheitlichte ESG- und Finanzanalysen für strategische Entscheidungsfindung."
+    },
+    "about": {
+      "title": "Über uns | Humblify",
+      "description": "Erfahren Sie mehr über Humblify, unsere Mission und das Team hinter der EROI-Revolution."
+    },
+    "contact": {
+      "title": "Kontakt | Humblify",
+      "description": "Kontaktieren Sie Humblify für eine strategische Demo. Verwandeln Sie Ihr Entscheidungswesen."
+    }
+  },
+  "nav": {
+    "sidebar": {
+      "platform": "Plattform",
+      "solutions": "Lösungen",
+      "resources": "Ressourcen"
+    },
+    "home": "Startseite",
+    "platform": "Plattform",
+    "useCases": "Anwendungsfälle",
+    "resources": "Ressourcen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "bookDemo": "Demo buchen"
+  },
+  "hero": {
+    "title": "Jenseits des ROI. Willkommen beim EROI.",
+    "subtitle": "Humblify ist die KI-gesteuerte Plattform, die finanzielle Rentabilität mit echter Nachhaltigkeitswirkung integriert.",
+    "cta": "Strategische Demo buchen",
+    "secondaryCta": "Plattform ansehen"
+  }
+}

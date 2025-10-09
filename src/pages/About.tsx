@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import Navigation from '@/components/Navigation';
+import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
 import AnimatedSection from '@/components/AnimatedSection';

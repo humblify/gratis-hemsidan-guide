@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import AppSidebar from "./AppSidebar";
-import Navigation from "./Navigation";
+import Navigation from "./layout/Navigation";
 import Footer from "./Footer";
 
 interface LayoutProps {

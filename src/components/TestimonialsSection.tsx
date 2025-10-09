@@ -1,159 +1,131 @@
-import { useTranslation } from 'react-i18next';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Star, TrendingUp, Shield, Clock, Quote } from "lucide-react";
+import { motion } from 'framer-motion';
+import { Card, CardContent } from '@/components/ui/card';
+import { Quote } from 'lucide-react';
 
 const TestimonialsSection = () => {
-  const { t } = useTranslation();
-
-  // Enhanced testimonials with anonymized case studies
   const testimonials = [
     {
-      industry: "Energy Infrastructure",
-      company: "Leading Nordic Energy Company",
-      size: "€15B+ Revenue",
-      result: "+23% EROI Improvement",
-      metric: "€2.4M Risk-Adjusted Value",
-      timeline: "6 months",
-      quote: "Humblify transformed our investment decision-making by making environmental costs visible in real financial terms. The radical transparency gave us confidence in our long-term strategy.",
-      challenge: "Complex energy transition investments with uncertain regulatory landscape",
-      solution: "Integrated shadow pricing with CSRD compliance modeling",
-      icon: TrendingUp,
-      color: "text-green-500"
+      quote: "Humblify förändrade fundamentalt hur vi ser på finansiell risk. EROI-metoden avslöjade dolda miljökostnader som skulle ha kostat oss €3.2M.",
+      author: "Anna Svensson",
+      role: "CFO",
+      company: "Nordens Energi AB",
+      focus: "Finansiell Risk & Compliance",
+      metric: "+23% EROI",
+      industry: "Energi"
     },
     {
-      industry: "Manufacturing",
-      company: "Industrial Manufacturing Group", 
-      size: "€8B+ Revenue",
-      result: "15% Risk Reduction",
-      metric: "18 months to 6 months",
-      timeline: "4 months",
-      quote: "The AI Multi-Agent system eliminated our data silos. We now see the complete picture of how sustainability impacts profitability across all our operations.",
-      challenge: "Fragmented ESG data across multiple facilities and supply chains",
-      solution: "Unified data orchestration with predictive risk modeling",
-      icon: Shield,
-      color: "text-blue-500"
+      quote: "Det enda verktyget som faktiskt kopplar hållbarhetsdata direkt till P&L. Vi kunde kvantifiera vår miljöpåverkan i finansiella termer för första gången.",
+      author: "Lars Andersson",
+      role: "Hållbarhetschef",
+      company: "Baltic Infrastructure Group",
+      focus: "ESG Integration",
+      metric: "15% riskreduktion",
+      industry: "Infrastruktur"
     },
     {
-      industry: "Infrastructure",
-      company: "Smart City Infrastructure",
-      size: "€12B+ Projects",
-      result: "CSRD-Ready",
-      metric: "Full Regulatory Compliance",
-      timeline: "3 months",
-      quote: "From regulatory confusion to strategic clarity. Humblify turned compliance from a cost center into a competitive advantage through transparent ESG integration.",
-      challenge: "CSRD and EU Taxonomy compliance for complex infrastructure projects",
-      solution: "Automated compliance tracking with strategic integration",
-      icon: Clock,
-      color: "text-purple-500"
+      quote: "Humblifys AI-modeller gav oss den klarhet vi behövde för att fatta ett strategiskt beslut på €50M. Transparensen i ExplanationTree var avgörande.",
+      author: "Maria Bergström",
+      role: "Investeringsdirektör",
+      company: "Nordic Capital Ventures",
+      focus: "Kapitalallokering",
+      metric: "€2.4M mervärde",
+      industry: "Finans"
     }
   ];
 
   return (
-    <section className="section-padding bg-gradient-to-b from-background to-card/20">
+    <section className="section-padding bg-gradient-to-b from-background via-card/5 to-background">
       <div className="container-custom">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <div className="mb-6">
-            <span className="inline-block px-4 py-2 bg-success/10 border border-success/20 rounded-full text-success text-sm font-medium">
-              {t('testimonials.title')}
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-20"
+        >
+          <div className="inline-block card-glass px-6 py-3 mb-6">
+            <span className="text-sm font-bold tracking-wider text-primary uppercase">
+              Verifierade Resultat
             </span>
           </div>
-          
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-primary">Proven Impact</span> Across Industries
+          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+            <span className="text-foreground">Betrodd av </span>
+            <span className="text-glow">strategiska ledare</span>
           </h2>
-          
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            {t('testimonials.subtitle')}
+            Konkreta resultat från ledande organisationer inom energi, infrastruktur och finans.
           </p>
-        </div>
+        </motion.div>
 
-        {/* Industry Results Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        {/* Testimonials Grid */}
+        <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="card-glow hover:scale-105 transition-all duration-300 relative">
-              {/* Quote Icon */}
-              <div className="absolute -top-4 left-8">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                  <Quote className="w-4 h-4 text-background" />
-                </div>
-              </div>
-
-              <CardHeader className="pt-8">
-                <div className="flex items-center justify-between mb-4">
-                  <testimonial.icon className={`w-8 h-8 ${testimonial.color}`} />
-                  <Badge variant="outline" className="text-xs">
-                    {testimonial.timeline}
-                  </Badge>
-                </div>
-                
-                <CardTitle className="text-lg mb-2">{testimonial.industry}</CardTitle>
-                <CardDescription className="text-sm text-muted-foreground mb-4">
-                  {testimonial.company} • {testimonial.size}
-                </CardDescription>
-                
-                {/* Key Metrics */}
-                <div className="grid grid-cols-2 gap-4 mb-4">
-                  <div className="text-center p-3 bg-primary/5 rounded-lg">
-                    <div className="font-bold text-primary text-lg">{testimonial.result}</div>
-                    <div className="text-xs text-muted-foreground">Improvement</div>
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+            >
+              <Card className="card-glow h-full hover:scale-[1.02] transition-all duration-300">
+                <CardContent className="p-8 space-y-6">
+                  {/* Quote Icon */}
+                  <Quote className="w-10 h-10 text-primary/40" />
+                  
+                  {/* Testimonial Text */}
+                  <p className="text-foreground leading-relaxed text-lg">
+                    "{testimonial.quote}"
+                  </p>
+                  
+                  {/* Author Info */}
+                  <div className="pt-6 border-t border-border/50">
+                    <div className="flex items-start justify-between mb-4">
+                      <div>
+                        <div className="font-bold text-foreground">{testimonial.author}</div>
+                        <div className="text-sm text-muted-foreground">{testimonial.role}</div>
+                        <div className="text-sm text-muted-foreground">{testimonial.company}</div>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-2xl font-bold text-glow">{testimonial.metric}</div>
+                        <div className="text-xs text-muted-foreground">{testimonial.industry}</div>
+                      </div>
+                    </div>
+                    <div className="inline-block px-3 py-1 bg-primary/10 border border-primary/20 rounded-full">
+                      <span className="text-xs font-semibold text-primary">{testimonial.focus}</span>
+                    </div>
                   </div>
-                  <div className="text-center p-3 bg-success/5 rounded-lg">
-                    <div className="font-bold text-success text-sm">{testimonial.metric}</div>
-                    <div className="text-xs text-muted-foreground">Value</div>
-                  </div>
-                </div>
-              </CardHeader>
-              
-              <CardContent>
-                {/* Challenge & Solution */}
-                <div className="space-y-4 mb-6">
-                  <div>
-                    <h4 className="font-semibold text-sm text-destructive mb-2">Challenge:</h4>
-                    <p className="text-sm text-muted-foreground">{testimonial.challenge}</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-sm text-primary mb-2">Solution:</h4>
-                    <p className="text-sm text-muted-foreground">{testimonial.solution}</p>
-                  </div>
-                </div>
-
-                {/* Quote */}
-                <blockquote className="border-l-4 border-primary/20 pl-4 text-sm italic text-muted-foreground">
-                  "{testimonial.quote}"
-                </blockquote>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
         </div>
 
-        {/* Trust Indicators */}
-        <div className="text-center">
-          <div className="flex flex-wrap justify-center items-center gap-8 mb-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary">€27B+</div>
-              <div className="text-sm text-muted-foreground">Investment Decisions Analyzed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-success">94%</div>
-              <div className="text-sm text-muted-foreground">CSRD Readiness Improvement</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-accent">18 months</div>
-              <div className="text-sm text-muted-foreground">Average ROI Realization</div>
-            </div>
+        {/* Stats Bar */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6"
+        >
+          <div className="text-center p-6 card-glass">
+            <div className="text-3xl font-bold text-glow mb-2">500+</div>
+            <div className="text-sm text-muted-foreground">Projekt Analyserade</div>
           </div>
-
-          {/* Industry Focus */}
-          <div className="flex flex-wrap justify-center gap-4">
-            {['Energy & Utilities', 'Manufacturing', 'Infrastructure', 'Real Estate', 'Transportation'].map((industry, index) => (
-              <Badge key={index} variant="outline" className="text-sm">
-                {industry}
-              </Badge>
-            ))}
+          <div className="text-center p-6 card-glass">
+            <div className="text-3xl font-bold text-gold-glow mb-2">€1.2B</div>
+            <div className="text-sm text-muted-foreground">Total Projektvolym</div>
           </div>
-        </div>
+          <div className="text-center p-6 card-glass">
+            <div className="text-3xl font-bold text-success mb-2">92%</div>
+            <div className="text-sm text-muted-foreground">Kundnöjdhet</div>
+          </div>
+          <div className="text-center p-6 card-glass">
+            <div className="text-3xl font-bold text-primary mb-2">45</div>
+            <div className="text-sm text-muted-foreground">Enterprise Kunder</div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
